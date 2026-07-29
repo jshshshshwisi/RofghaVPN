@@ -23,10 +23,13 @@ jobs:
         curl -sL "https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-32.zip" -o x86.zip
         unzip -q x86.zip && mv xray xray-x86 && rm x86.zip
         chmod +x xray-*
-    - name: Build APK
+    - name: Install Gradle
       run: |
-        chmod +x gradlew
-        ./gradlew assembleDebug
+        curl -sL "https://services.gradle.org/distributions/gradle-7.6.3-bin.zip" -o /tmp/gradle.zip
+        sudo unzip -q -o /tmp/gradle.zip -d /opt/
+        echo "/opt/gradle-7.6.3/bin" >> $GITHUB_PATH
+    - name: Build APK
+      run: gradle assembleDebug --no-daemon
     - uses: actions/upload-artifact@v4
       with:
         name: RofghaVPN
