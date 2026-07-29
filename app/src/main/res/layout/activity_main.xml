@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="🛡️ Rofgha VPN"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="VLESS + Reality"
+        android:textColor="#8B949E"
+        android:textSize="14sp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="قطع شده ❌"
+        android:textColor="#F85149"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Server Info -->
+    <TextView
+        android:id="@+id/tvServerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#58A6FF"
+        android:textSize="13sp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Big Connect Button -->
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+        <!-- Outer glow -->
+        <View
+            android:id="@+id/viewGlow"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/btn_glow" />
+
+        <!-- Main button -->
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_connect"
+            android:text="اتصال"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Config Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="کانفیگ VLESS:"
+        android:textColor="#8B949E"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etConfig"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edit_background"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:hint="vless://..."
+        android:textColor="#C9D1D9"
+        android:textColorHint="#484F58"
+        android:textSize="12sp"
+        android:inputType="textUri"
+        android:singleLine="false"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Rofgha 1.0"
+        android:textColor="#484F58"
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+-keep class com.rofgha.vpn.** { *; }
+-keepclassmembers class com.rofgha.vpn.** { *; }

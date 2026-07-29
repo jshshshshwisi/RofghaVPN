@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0D1117</color>
+    <color name="surface">#161B22</color>
+    <color name="primary">#238636</color>
+    <color name="danger">#F85149</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="connected">#238636</color>
+    <color name="disconnected">#F85149</color>
+    <color name="connect_green">#238636</color>
+    <color name="disconnect_red">#F85149</color>
+</resources>
